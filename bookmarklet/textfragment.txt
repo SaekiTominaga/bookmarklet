@@ -1,0 +1,1 @@
+javascript:(()=>{const n=getSelection().toString();if(""===n)return void console.warn("文字列が選択されていません。");const o=new URL(location);o.hash=`#:~:text=${encodeURIComponent(n)}`,location.assign(o)})();
