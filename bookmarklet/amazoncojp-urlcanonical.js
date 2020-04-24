@@ -14,5 +14,6 @@
 		return;
 	}
 
-	location.assign(document.querySelector('link[rel="canonical"]').href.replace(/\/([^/]*)\/dp\//, '/dp/'));
+	const canonicalUrl = document.querySelector('link[rel="canonical"]').href;
+	location.assign(/^https:\/\/www.amazon.co.jp\/dp\/([\dA-Z]{10})$/.test(canonicalUrl) ? canonicalUrl : canonicalUrl.replace(/\/([^/]*)\/dp\//, '/dp/'));
 })();
