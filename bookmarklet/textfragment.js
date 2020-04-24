@@ -1,7 +1,5 @@
 /**
  * 選択文字列の情報を Scroll To Text Fragment 用にURLに追加する
- *
- * @version 1.0.0 2020-04-12 公開用に作成
  */
 (() => {
 	const selectionStr = getSelection().toString();
