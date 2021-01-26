@@ -2,6 +2,7 @@
  * 表示しているツイートの引用ツイートを検索する
  */
 (() => {
+    'use strict';
     if (location.host !== 'twitter.com') {
         alert('表示しているページは Twitter のツイート画面ではなさそうです。');
         return;

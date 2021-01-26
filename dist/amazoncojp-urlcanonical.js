@@ -2,6 +2,7 @@
  * Amazon.co.jp の商品ページURLを正規化する
  */
 (() => {
+    'use strict';
     if (location.host !== 'www.amazon.co.jp') {
         alert('表示しているページは Amazon.co.jp の画面ではなさそうです。');
         return;

@@ -2,6 +2,8 @@
  * 表示しているページを Internet Archive で検索する
  */
 (() => {
+	'use strict';
+
 	if (location.host === 'web.archive.org') {
 		alert('表示しているサイトは Internet Archive 自身です。');
 		return;

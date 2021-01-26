@@ -2,6 +2,8 @@
  * 選択文字列の情報を Scroll To Text Fragment 用にURLに追加する
  */
 (() => {
+	'use strict';
+
 	const selectionStr = getSelection()?.toString();
 	if (selectionStr === undefined || selectionStr === '') {
 		alert('文字列が選択されていません。');
