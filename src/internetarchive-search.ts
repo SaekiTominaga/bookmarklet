@@ -3,7 +3,7 @@
  */
 (() => {
 	if (location.host === 'web.archive.org') {
-		console.warn('表示しているサイトは Internet Archive 自身です。');
+		alert('表示しているサイトは Internet Archive 自身です。');
 		return;
 	}
 

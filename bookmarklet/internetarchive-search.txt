@@ -1,1 +1,1 @@
-javascript:"web.archive.org"!==location.host?location.assign(`https://web.archive.org/web/*/${location}`):console.warn("表示しているサイトは Internet Archive 自身です。");
+javascript:"web.archive.org"!==location.host?location.assign(`https://web.archive.org/web/*/${location}`):alert("表示しているサイトは Internet Archive 自身です。");
