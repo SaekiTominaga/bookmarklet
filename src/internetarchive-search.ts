@@ -7,5 +7,5 @@
 		return;
 	}
 
-	location.assign(`https://web.archive.org/web/*/${location}`);
+	window.open(`https://web.archive.org/web/*/${location}`);
 })();
