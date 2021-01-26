@@ -21,7 +21,6 @@
 		"url": "git+https://github.com/SaekiTominaga/bookmarklet.git"
 	},
 	"scripts": {
-		"convert": "node convert.mjs",
 		"_build:tsc": "tsc -w",
 		"_build:minify": "onchange -f add -f change -v dist/*.js -e dist/*.min.js -- terser {{file}} -o {{fileDir}}/{{fileBaseNoExt}}.min.js -c ecma=2020 -m --ecma 2020",
 		"_build:bookmarklet": "onchange -f add -f change -v dist/*.min.js -- node build.mjs {{file}}",
