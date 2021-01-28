@@ -2,24 +2,8 @@
 	"name": "@saekitominaga/bookmarklet",
 	"version": "1.0.0",
 	"description": "My bookmarklet",
-	"keywords": [
-		"bookmarklet"
-	],
-	"homepage": "https://github.com/SaekiTominaga/bookmarklet#readme",
-	"bugs": {
-		"url": "https://github.com/SaekiTominaga/bookmarklet/issues"
-	},
 	"license": "MIT",
 	"author": "Saeki Tominaga",
-	"files": [
-		"bookmarklet",
-		"dist",
-		"src"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/SaekiTominaga/bookmarklet.git"
-	},
 	"scripts": {
 		"_build:tsc": "tsc -w",
 		"_build:minify": "onchange -f add -f change -v dist/*.js -e dist/*.min.js -- terser {{file}} -o {{fileDir}}/{{fileBaseNoExt}}.min.js -c ecma=2020 -m --ecma 2020",
